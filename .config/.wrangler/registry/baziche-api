@@ -1,0 +1,6 @@
+{
+  "debugPortAddress": "127.0.0.1:39965",
+  "defaultEntrypointService": "core:user:baziche-api",
+  "userWorkerService": "core:user:baziche-api",
+  "instanceId": "9f8dd817-2a2a-47e2-98ed-bd5d654b21a5"
+}

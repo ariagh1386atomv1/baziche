@@ -1,0 +1,192 @@
+
+--- 2026-09-16T23:19:47.677Z debug
+🪵  Writing logs to "/home/user/.config/.wrangler/logs/wrangler-2026-09-16_23-19-47_472.log"
+---
+
+--- 2026-09-16T23:19:47.677Z debug
+.env file not found at "/home/user/baziche/backend/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-16T23:19:47.678Z debug
+.env file not found at "/home/user/baziche/backend/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-16T23:19:47.691Z log
+
+ ⛅️ wrangler 4.131.2
+────────────────────
+---
+
+--- 2026-09-16T23:19:47.703Z debug
+setting config
+---
+
+--- 2026-09-16T23:19:47.703Z debug
+Updating config... undefined undefined
+---
+
+--- 2026-09-16T23:19:47.709Z debug
+Metrics dispatcher: Posting data {"deviceId":"6205e303-b797-47e3-aeac-377d366538c2","event":"wrangler command started","timestamp":1789600787709,"properties":{"amplitude_session_id":1789600787692,"amplitude_event_id":0,"wranglerVersion":"4.131.2","wranglerMajorVersion":4,"wranglerMinorVersion":131,"wranglerPatchVersion":2,"osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Fri Jul 17 14:31:34 UTC 2026","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":null,"argsUsed":["port"],"argsCombination":"port","sanitizedCommand":"dev","sanitizedArgs":{},"currentAgentSkillsInstalled":null}}
+---
+
+--- 2026-09-16T23:19:47.847Z log
+Using secrets defined in .dev.vars
+---
+
+--- 2026-09-16T23:19:47.849Z log
+Your Worker has access to the following bindings:
+---
+
+--- 2026-09-16T23:19:47.849Z log
+Binding                                            Resource                  Mode
+---
+
+--- 2026-09-16T23:19:47.849Z log
+env.DB_AUTH (baziche-auth)                         D1 Database               local
+---
+
+--- 2026-09-16T23:19:47.849Z log
+env.DB_DATA (baziche-data)                         D1 Database               local
+---
+
+--- 2026-09-16T23:19:47.849Z log
+env.R2_PROJECTS (baziche-projects)                 R2 Bucket                 local
+---
+
+--- 2026-09-16T23:19:47.849Z log
+env.R2_ASSETS (baziche-assets)                     R2 Bucket                 local
+---
+
+--- 2026-09-16T23:19:47.849Z log
+env.R2_BUILDS (baziche-builds)                     R2 Bucket                 local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.ENVIRONMENT ("development")                    Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.ACCESS_TOKEN_TTL_SEC ("900")                   Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.REFRESH_TOKEN_TTL_SEC ("2592000")              Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.REGISTRIES_VERSION ("1")                       Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.DEFAULT_TARGET_API ("36")                      Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.DEFAULT_MIN_API ("26")                         Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.MAX_PROJECT_JSON_BYTES ("5242880")             Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.JWT_SECRET ("(hidden)")                        Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.JWT_SECRET_PREV ("(hidden)")                   Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.PASSWORD_PEPPER ("(hidden)")                   Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.R2_ACCOUNT_ID ("(hidden)")                     Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.R2_ACCESS_KEY_ID ("(hidden)")                  Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+env.R2_SECRET_ACCESS_KEY ("(hidden)")              Environment Variable      local
+---
+
+--- 2026-09-16T23:19:47.850Z log
+
+---
+
+--- 2026-09-16T23:19:48.164Z debug
+RemoteRuntimeController teardown beginning...
+---
+
+--- 2026-09-16T23:19:48.164Z debug
+RemoteRuntimeController teardown complete
+---
+
+--- 2026-09-16T23:19:48.167Z log
+⎔ Starting local server...
+---
+
+--- 2026-09-16T23:19:48.512Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadStart"}
+---
+
+--- 2026-09-16T23:19:48.598Z debug
+[InspectorProxyWorker] handleProxyControllerIncomingMessage {"type":"reloadComplete","proxyData":{"userWorkerUrl":{"protocol":"http:","hostname":"127.0.0.1","port":"43545"},"userWorkerInspectorUrl":{"protocol":"ws:","hostname":"127.0.0.1","port":"36597","pathname":"/core:user:baziche-api"},"userWorkerInnerUrlOverrides":{"protocol":"http:"},"headers":{"MF-Proxy-Shared-Secret":"851673a5-952c-4ac8-9144-0c109a3f19a9"},"liveReload":false,"proxyLogsToController":false}}
+---
+
+--- 2026-09-16T23:19:48.599Z debug
+[InspectorProxyWorker] reconnectRuntimeWebSocket
+---
+
+--- 2026-09-16T23:19:48.600Z debug
+[InspectorProxyWorker] NEW RUNTIME WEBSOCKET http://127.0.0.1:36597/core:user:baziche-api
+---
+
+--- 2026-09-16T23:19:48.603Z debug
+[InspectorProxyWorker] SEND TO DEVTOOLS {"method":"Runtime.executionContextsCleared"}
+---
+
+--- 2026-09-16T23:19:48.606Z debug
+[InspectorProxyWorker] RUNTIME WEBSOCKET OPENED
+---
+
+--- 2026-09-16T23:19:48.607Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.enable","id":100000001}
+---
+
+--- 2026-09-16T23:19:48.608Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE {
+  method: 'Runtime.executionContextCreated',
+  params: {
+    context: {
+      id: 397772961,
+      origin: '',
+      name: 'Worker',
+      uniqueId: '-8593359164695353918.-7671778432955897554'
+    }
+  }
+}
+---
+
+--- 2026-09-16T23:19:48.609Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000001, result: {} }
+---
+
+--- 2026-09-16T23:19:58.613Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000002}
+---
+
+--- 2026-09-16T23:19:58.615Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000002, result: { id: 'eaa03c346b824f2e' } }
+---
+
+--- 2026-09-16T23:20:08.618Z debug
+[InspectorProxyWorker] SEND TO RUNTIME {"method":"Runtime.getIsolateId","id":100000003}
+---
+
+--- 2026-09-16T23:20:08.619Z debug
+[InspectorProxyWorker] RUNTIME INCOMING MESSAGE { id: 100000003, result: { id: 'eaa03c346b824f2e' } }
+---

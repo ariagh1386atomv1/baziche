@@ -1,0 +1,101 @@
+
+--- 2026-09-16T22:12:08.698Z debug
+🪵  Writing logs to "/home/user/.config/.wrangler/logs/wrangler-2026-09-16_22-12-08_494.log"
+---
+
+--- 2026-09-16T22:12:08.698Z debug
+.env file not found at "/home/user/baziche/backend/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-16T22:12:08.699Z debug
+.env file not found at "/home/user/baziche/backend/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-16T22:12:08.705Z log
+
+ ⛅️ wrangler 4.131.2
+────────────────────
+---
+
+--- 2026-09-16T22:12:08.706Z log
+Resource location: local 
+
+---
+
+--- 2026-09-16T22:12:08.706Z log
+Use --remote if you want to access the remote instance.
+
+---
+
+--- 2026-09-16T22:12:08.719Z log
+🌀 Executing on local database baziche-auth (00000000-0000-0000-0000-000000000000) from .wrangler/state/v3/d1:
+---
+
+--- 2026-09-16T22:12:08.719Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-09-16T22:12:08.738Z debug
+Metrics dispatcher: Posting data {"deviceId":"6205e303-b797-47e3-aeac-377d366538c2","event":"wrangler command started","timestamp":1789596728738,"properties":{"amplitude_session_id":1789596728711,"amplitude_event_id":0,"wranglerVersion":"4.131.2","wranglerMajorVersion":4,"wranglerMinorVersion":131,"wranglerPatchVersion":2,"osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Fri Jul 17 14:31:34 UTC 2026","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":null,"argsUsed":["local"],"argsCombination":"local","sanitizedCommand":"d1 migrations apply","sanitizedArgs":{"local":true},"currentAgentSkillsInstalled":null}}
+---
+
+--- 2026-09-16T22:12:09.436Z log
+🚣 1 command executed successfully.
+---
+
+--- 2026-09-16T22:12:09.436Z log
+🌀 Executing on local database baziche-auth (00000000-0000-0000-0000-000000000000) from .wrangler/state/v3/d1:
+---
+
+--- 2026-09-16T22:12:09.436Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-09-16T22:12:09.760Z log
+🚣 1 command executed successfully.
+---
+
+--- 2026-09-16T22:12:09.761Z log
+Migrations to be applied:
+---
+
+--- 2026-09-16T22:12:09.771Z log
+┌──────────────┐
+│ name         │
+├──────────────┤
+│ 001_init.sql │
+└──────────────┘
+---
+
+--- 2026-09-16T22:12:09.771Z log
+? About to apply 1 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+---
+
+--- 2026-09-16T22:12:09.772Z log
+🤖 Using fallback value in non-interactive context: yes
+---
+
+--- 2026-09-16T22:12:09.777Z log
+🌀 Executing on local database baziche-auth (00000000-0000-0000-0000-000000000000) from .wrangler/state/v3/d1:
+---
+
+--- 2026-09-16T22:12:09.777Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-09-16T22:12:10.238Z log
+🚣 18 commands executed successfully.
+---
+
+--- 2026-09-16T22:12:10.239Z log
+┌──────────────┬────────┐
+│ name         │ status │
+├──────────────┼────────┤
+│ 001_init.sql │ ✅     │
+└──────────────┴────────┘
+---
+
+--- 2026-09-16T22:12:10.239Z debug
+Metrics dispatcher: Posting data {"deviceId":"6205e303-b797-47e3-aeac-377d366538c2","event":"wrangler command completed","timestamp":1789596730239,"properties":{"amplitude_session_id":1789596728711,"amplitude_event_id":1,"wranglerVersion":"4.131.2","wranglerMajorVersion":4,"wranglerMinorVersion":131,"wranglerPatchVersion":2,"osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Fri Jul 17 14:31:34 UTC 2026","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":null,"argsUsed":["local"],"argsCombination":"local","sanitizedCommand":"d1 migrations apply","sanitizedArgs":{"local":true},"durationMs":1539,"currentAgentSkillsInstalled":null}}
+---

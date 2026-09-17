@@ -1,0 +1,86 @@
+
+--- 2026-09-16T22:11:36.498Z debug
+🪵  Writing logs to "/home/user/.config/.wrangler/logs/wrangler-2026-09-16_22-11-36_290.log"
+---
+
+--- 2026-09-16T22:11:36.498Z debug
+.env file not found at "/home/user/baziche/backend/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-16T22:11:36.499Z debug
+.env file not found at "/home/user/baziche/backend/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-16T22:11:36.602Z log
+
+ ⛅️ wrangler 4.131.2
+────────────────────
+---
+
+--- 2026-09-16T22:11:36.603Z log
+Resource location: local 
+
+---
+
+--- 2026-09-16T22:11:36.603Z log
+Use --remote if you want to access the remote instance.
+
+---
+
+--- 2026-09-16T22:11:36.618Z log
+🌀 Executing on local database baziche-auth (00000000-0000-0000-0000-000000000000) from .wrangler/state/v3/d1:
+---
+
+--- 2026-09-16T22:11:36.618Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-09-16T22:11:36.630Z debug
+Metrics dispatcher: Posting data {"deviceId":"6205e303-b797-47e3-aeac-377d366538c2","event":"wrangler command started","timestamp":1789596696630,"properties":{"amplitude_session_id":1789596696608,"amplitude_event_id":0,"wranglerVersion":"4.131.2","wranglerMajorVersion":4,"wranglerMinorVersion":131,"wranglerPatchVersion":2,"osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Fri Jul 17 14:31:34 UTC 2026","nodeVersion":22,"packageManager":"npm","isFirstUsage":true,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":null,"argsUsed":["local"],"argsCombination":"local","sanitizedCommand":"d1 migrations apply","sanitizedArgs":{"local":true},"currentAgentSkillsInstalled":null}}
+---
+
+--- 2026-09-16T22:11:37.234Z log
+
+---
+
+--- 2026-09-16T22:11:37.288Z error
+✘ [ERROR] The Workers runtime failed to start. There was likely a problem with the workerd binary or your configuration.
+
+  Runtime stderr:
+  *** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1716: failed: SQLite failed; dbErrorMessage(err, db) = database or disk is full: SQLITE_FULL
+  stack: /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@3844c07 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@38530e0 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2442999 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a4edc /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a4896 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@245b5dc /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@245b032 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2408a32 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@249ed4f /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a2015 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23d6a69 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8feb5 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b90406 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8de3e /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8dc3e /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23bdd6c /lib/x86_64-linux-gnu/libc.so.6@29ca7 /lib/x86_64-linux-gnu/libc.so.6@29d64 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23bd024
+
+
+---
+
+--- 2026-09-16T22:11:37.296Z debug
+MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There was likely a problem with the workerd binary or your configuration.
+Runtime stderr:
+*** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1716: failed: SQLite failed; dbErrorMessage(err, db) = database or disk is full: SQLITE_FULL
+stack: /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@3844c07 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@38530e0 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2442999 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a4edc /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a4896 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@245b5dc /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@245b032 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2408a32 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@249ed4f /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a2015 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23d6a69 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8feb5 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b90406 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8de3e /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8dc3e /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23bdd6c /lib/x86_64-linux-gnu/libc.so.6@29ca7 /lib/x86_64-linux-gnu/libc.so.6@29d64 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23bd024
+    at StartupLogBuffer.handleStartupFailure (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:101022:13)
+    at Runtime.updateConfig (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:101102:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async #assembleAndUpdateConfig (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:118080:30)
+    at async /home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:116855:7
+    at async Mutex.runWith (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:55592:16)
+    at async #waitForReady (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:118205:5)
+    at async _Miniflare._getProxyClient (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:118502:5)
+    at async #getProxy (/home/user/baziche/backend/node_modules/miniflare/dist/src/index.js:118562:25)
+    at async executeLocally (/home/user/baziche/backend/node_modules/wrangler/wrangler-dist/cli.js:225225:14)
+---
+
+--- 2026-09-16T22:11:37.296Z log
+If you think this is a bug then please create an issue at https://github.com/cloudflare/workers-sdk/issues/new/choose
+---
+
+--- 2026-09-16T22:11:37.296Z debug
+Metrics dispatcher: Posting data {"deviceId":"6205e303-b797-47e3-aeac-377d366538c2","event":"wrangler command errored","timestamp":1789596697296,"properties":{"amplitude_session_id":1789596696608,"amplitude_event_id":1,"wranglerVersion":"4.131.2","wranglerMajorVersion":4,"wranglerMinorVersion":131,"wranglerPatchVersion":2,"osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Fri Jul 17 14:31:34 UTC 2026","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":null,"argsUsed":["local"],"argsCombination":"local","sanitizedCommand":"d1 migrations apply","sanitizedArgs":{"local":true},"durationMs":733,"errorType":"MiniflareCoreError","currentAgentSkillsInstalled":null}}
+---
+
+--- 2026-09-16T22:11:37.298Z debug
+Sentry: Reporting disabled - would have sent MiniflareCoreError [ERR_RUNTIME_FAILURE]: The Workers runtime failed to start. There was likely a problem with the workerd binary or your configuration.
+Runtime stderr:
+*** Fatal uncaught kj::Exception: workerd/util/sqlite.c++:1716: failed: SQLite failed; dbErrorMessage(err, db) = database or disk is full: SQLITE_FULL
+stack: /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@3844c07 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@38530e0 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2442999 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a4edc /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a4896 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@245b5dc /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@245b032 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2408a32 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@249ed4f /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@24a2015 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23d6a69 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8feb5 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b90406 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8de3e /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@5b8dc3e /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23bdd6c /lib/x86_64-linux-gnu/libc.so.6@29ca7 /lib/x86_64-linux-gnu/libc.so.6@29d64 /home/user/baziche/backend/node_modules/@cloudflare/workerd-linux-64/bin/workerd@23bd024.
+---
