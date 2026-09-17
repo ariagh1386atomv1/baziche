@@ -1,0 +1,72 @@
+name: Extract ZIP to Repository
+
+on:
+  workflow_dispatch:
+    inputs:
+      zip_file:
+        description: "Path to ZIP file inside repository"
+        required: true
+        default: "baziche.zip"
+      extract_path:
+        description: "Destination directory"
+        required: true
+        default: "."
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check ZIP exists
+        run: |
+          if [ ! -f "${{ inputs.zip_file }}" ]; then
+            echo "ZIP file not found: ${{ inputs.zip_file }}"
+            exit 1
+          fi
+
+          echo "Found ZIP:"
+          ls -lh "${{ inputs.zip_file }}"
+
+      - name: Extract ZIP
+        run: |
+          mkdir -p "${{ inputs.extract_path }}"
+
+          unzip -o "${{ inputs.zip_file }}" \
+            -d "${{ inputs.extract_path }}"
+
+      - name: Show extracted files
+        run: |
+          echo "Extracted files:"
+          find "${{ inputs.extract_path }}" -maxdepth 4 -type f | head -200
+
+      - name: Remove ZIP
+        run: |
+          rm -f "${{ inputs.zip_file }}"
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        run: |
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: extract project ZIP"
+
+      - name: Push changes
+        run: |
+          git push
